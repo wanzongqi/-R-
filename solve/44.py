@@ -26,8 +26,9 @@ while flag:
         diff = Pentagon(i)-Pentagon(j)
         sum = Pentagon(i)+Pentagon(j)
         if check(diff) and check(sum):
-            flag = True
+            flag = False
             print(diff)
+            break
         j +=1
     i += 1
 
